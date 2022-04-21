@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "rn-chat",
+    "name": "DevYoung Chat",
     "slug": "rn-chat",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,9 +17,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.devyoung.chat",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "The app accesses the photo library to upload your profile when you are signing up or updating profile"
+      }
     },
     "android": {
+      "package": "com.devyoung.chat",
+      "versionCode": 1,
+      "permissions": ["READ_EXTERNAL_STORAGE","WRITE_EXTERNAL_STORAGE"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
